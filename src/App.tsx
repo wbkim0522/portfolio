@@ -10,8 +10,7 @@ import samsungImg from "./assets/samsung_mok.svg";
 export default function App() {
 
   const [lang, setLang] = useState<LanguageType>(() => {
-    const userLanguages = navigator.languages ? navigator.languages.join(',') : navigator.language;
-    return userLanguages.toLowerCase().includes('ja') ? 'ja' : 'ko';
+    return  navigator.languages[0] === 'ja' ? 'ja' : 'ko';
   });
   const [theme, setTheme] = useState('light');
   const [activeMenu, setActiveMenu] = useState<number>(0);
