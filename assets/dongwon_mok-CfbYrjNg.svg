@@ -1,0 +1,113 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 투명 배경 위에 렌더링되는 마스터 윈도우 프레임 -->
+  <rect x="30" y="30" width="1140" height="640" rx="4" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5"/>
+  
+  <!-- 1. 상단 브라우저 헤더 영역 (Windows 스타일 상단 바) -->
+  <path d="M 31 31 L 1169 31 L 1169 75 L 31 75 Z" fill="#F3F4F6"/>
+  <line x1="30" y1="75" x2="1170" y2="75" stroke="#E5E7EB" stroke-width="1.5"/>
+  
+  <!-- 상단 좌측: 메인 시스템 로고 및 경로 추상화 스켈레톤 -->
+  <rect x="52" y="45" width="55" height="16" rx="3" fill="#9CA3AF"/>
+  <rect x="122" y="48" width="80" height="10" rx="2" fill="#E5E7EB"/>
+  
+  <!-- [★핵심 수정] 상단 우측: Windows 표준 윈도우 제어 컨트롤 박스 -->
+  <!-- 최소화 버튼 -->
+  <line x1="1080" y1="54" x2="1092" y2="54" stroke="#4B5563" stroke-width="1.5"/>
+  
+  <!-- 최대화 버튼 -->
+  <rect x="1110" y="46" width="12" height="12" fill="none" stroke="#4B5563" stroke-width="1.5"/>
+  
+  <!-- 닫기 (X) 버튼 -->
+  <path d="M 1142 46 L 1154 58 M 1154 46 L 1142 58" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- 2. 좌측 네비게이션 사이드바 영역 -->
+  <path d="M 31 75 L 230 75 L 230 669 L 31 669 Z" fill="#F9FAFB"/>
+  <line x1="230" y1="75" x2="230" y2="670" stroke="#E5E7EB" stroke-width="1.5"/>
+  
+  <!-- 사이드바 내 메뉴 구조 (추상화 블록) -->
+  <rect x="52" y="110" width="45" height="8" rx="2" fill="#D1D5DB"/>
+  <rect x="52" y="145" width="110" height="12" rx="4" fill="#9CA3AF"/>
+  
+  <!-- 현재 활성화된 피벗 분석 메뉴 영역 하이라이트 (포인트 컬러 고정) -->
+  <rect x="40" y="178" width="180" height="34" rx="4" fill="#3B82F6" fill-opacity="0.08"/>
+  <rect x="52" y="189" width="120" height="12" rx="4" fill="#3B82F6"/>
+  
+  <rect x="52" y="240" width="95" height="12" rx="4" fill="#9CA3AF"/>
+  <rect x="52" y="285" width="105" height="12" rx="4" fill="#9CA3AF"/>
+
+  <!-- 3. 우측 메인 대시보드 워크스페이스 -->
+  <!-- 탭 컨트롤 레이아웃 -->
+  <rect x="270" y="110" width="130" height="12" rx="4" fill="#9CA3AF"/>
+  <rect x="430" y="110" width="150" height="12" rx="4" fill="#3B82F6"/>
+  <line x1="420" y1="133" x2="590" y2="133" stroke="#3B82F6" stroke-width="2"/>
+  <line x1="230" y1="134" x2="1170" y2="134" stroke="#E5E7EB" stroke-width="1.5"/>
+  
+  <!-- 트러블슈팅 강조 인디케이터 배너 (순수 자바스크립트 우회 아키텍처 상징) -->
+  <rect x="270" y="160" width="870" height="60" rx="4" fill="#EFF6FF" stroke="#3B82F6" stroke-opacity="0.15" stroke-width="1"/>
+  <circle cx="305" cy="190" r="12" fill="#3B82F6" fill-opacity="0.15"/>
+  <path d="M 301 190 L 304 193 L 310 186" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="330" y="175" width="140" height="10" rx="3" fill="#3B82F6"/>
+  <rect x="330" y="194" width="550" height="8" rx="2" fill="#9CA3AF"/>
+  
+  <!-- 4. 가공 완료된 데이터 그리드 테이블 (GridView) -->
+  <!-- 테이블 헤더: 언어 무관 공통 심볼(⠿, ⇅) 배치 -->
+  <rect x="270" y="245" width="870" height="38" rx="2" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- 컬럼 1 -->
+  <text x="290" y="269" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">⠿</text>
+  <rect x="310" y="259" width="80" height="10" rx="2" fill="#6B7280"/>
+  <text x="400" y="269" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="11">⇅</text>
+  
+  <!-- 컬럼 2 (피벗 집계 데이터 가공 핵심 타겟 컬럼 강조) -->
+  <text x="500" y="269" fill="#3B82F6" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">⠿</text>
+  <rect x="520" y="259" width="90" height="10" rx="2" fill="#3B82F6"/>
+  <text x="620" y="269" fill="#3B82F6" font-family="system-ui, sans-serif" font-size="11">⇅</text>
+  
+  <!-- 컬럼 3 -->
+  <text x="720" y="269" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">⠿</text>
+  <rect x="740" y="259" width="75" height="10" rx="2" fill="#6B7280"/>
+  <text x="825" y="269" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="11">⇅</text>
+  
+  <!-- 컬럼 4 -->
+  <text x="940" y="269" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">⠿</text>
+  <rect x="960" y="259" width="65" height="10" rx="2" fill="#6B7280"/>
+  <text x="1035" y="269" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="11">⇅</text>
+
+  <!-- 데이터 바인딩 로우 그리드 (4 Rows) -->
+  <!-- Row 1 -->
+  <rect x="310" y="307" width="95" height="10" rx="2" fill="#1F2937"/>
+  <rect x="520" y="307" width="65" height="10" rx="2" fill="#3B82F6" fill-opacity="0.8"/>
+  <rect x="740" y="307" width="85" height="10" rx="2" fill="#4B5563"/>
+  <rect x="960" y="303" width="60" height="18" rx="2" fill="#D1FAE5"/>
+  <rect x="972" y="308" width="36" height="8" rx="2" fill="#10B981"/>
+  <line x1="270" y1="334" x2="1140" y2="334" stroke="#F3F4F6" stroke-width="1"/>
+  
+  <!-- Row 2 -->
+  <rect x="310" y="354" width="85" height="10" rx="2" fill="#1F2937"/>
+  <rect x="520" y="354" width="55" height="10" rx="2" fill="#3B82F6" fill-opacity="0.8"/>
+  <rect x="740" y="354" width="75" height="10" rx="2" fill="#4B5563"/>
+  <rect x="960" y="350" width="60" height="18" rx="2" fill="#D1FAE5"/>
+  <rect x="972" y="355" width="36" height="8" rx="2" fill="#10B981"/>
+  <line x1="270" y1="381" x2="1140" y2="381" stroke="#F3F4F6" stroke-width="1"/>
+  
+  <!-- Row 3 -->
+  <rect x="310" y="401" width="110" height="10" rx="2" fill="#1F2937"/>
+  <rect x="520" y="401" width="70" height="10" rx="2" fill="#3B82F6" fill-opacity="0.8"/>
+  <rect x="740" y="401" width="80" height="10" rx="2" fill="#4B5563"/>
+  <rect x="960" y="397" width="60" height="18" rx="2" fill="#FEE2E2"/>
+  <rect x="972" y="402" width="36" height="8" rx="2" fill="#EF4444"/>
+  <line x1="270" y1="428" x2="1140" y2="428" stroke="#F3F4F6" stroke-width="1"/>
+
+  <!-- Row 4 -->
+  <rect x="310" y="448" width="90" height="10" rx="2" fill="#1F2937"/>
+  <rect x="520" y="448" width="50" height="10" rx="2" fill="#3B82F6" fill-opacity="0.8"/>
+  <rect x="740" y="448" width="70" height="10" rx="2" fill="#4B5563"/>
+  <rect x="960" y="444" width="60" height="18" rx="2" fill="#D1FAE5"/>
+  <rect x="972" y="449" width="36" height="8" rx="2" fill="#10B981"/>
+  <line x1="270" y1="475" x2="1140" y2="475" stroke="#F3F4F6" stroke-width="1"/>
+
+  <!-- 최하단 상태 바 인디케이터 -->
+  <rect x="275" y="510" width="130" height="8" rx="2" fill="#E5E7EB"/>
+  <circle cx="1045" cy="514" r="3" fill="#10B981"/>
+  <rect x="1055" y="510" width="80" height="8" rx="2" fill="#10B981" fill-opacity="0.6"/>
+</svg>
