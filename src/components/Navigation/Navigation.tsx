@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { LanguageType, TranslationType } from '../../data/language';
 import { STYLES } from '../../styles/theme'
+import { Sun, Moon } from 'lucide-react';
 
 interface navigationProps {
   lang: LanguageType;
@@ -94,12 +95,12 @@ export const Navigation = ({
             <button
               onClick={() => setTheme('light')}
               className={theme === 'light' ? STYLES.switchBtnActive : STYLES.switchBtnInactive}>
-              ☀️
+              <Sun size={14} className="inline-block" />
             </button>
             <button
               onClick={() => setTheme('dark')}
               className={theme === 'dark' ? STYLES.switchBtnActive : STYLES.switchBtnInactive}>
-              🌙
+              <Moon size={14} className="inline-block" />
             </button>
           </div>
         </div>
