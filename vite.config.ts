@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/portfolio/",
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
@@ -14,5 +15,5 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
-  },
+  }
 })

@@ -9,7 +9,10 @@ import samsungImg from "./assets/samsung_mok.svg";
 
 export default function App() {
 
-  const [lang, setLang] = useState<LanguageType>('ko');
+  const [lang, setLang] = useState<LanguageType>(() => {
+    const userLanguages = navigator.languages ? navigator.languages.join(',') : navigator.language;
+    return userLanguages.toLowerCase().includes('ja') ? 'ja' : 'ko';
+  });
   const [theme, setTheme] = useState('light');
   const [activeMenu, setActiveMenu] = useState<number>(0);
   const text = LANGUAGE[lang];
@@ -31,10 +34,10 @@ export default function App() {
           <Profile t={text.profile} />
         </div>
         <div className={activeMenu === 1 ? "lg:h-full" : "hidden"}>
-          <Project t={text.project1} labels={text.projectLabels}  imgSrc={dongwonImg}/>
+          <Project t={text.project1} labels={text.projectLabels} imgSrc={dongwonImg} />
         </div>
         <div className={activeMenu === 2 ? "lg:h-full" : "hidden"}>
-          <Project t={text.project2} labels={text.projectLabels}  imgSrc={samsungImg}/>
+          <Project t={text.project2} labels={text.projectLabels} imgSrc={samsungImg} />
         </div>
       </>
     );
