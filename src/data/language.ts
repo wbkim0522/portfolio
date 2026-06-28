@@ -1,6 +1,6 @@
 export const LANGUAGE = {
   ko: {
-    titleName: "김원빈",
+    titleName: "KIMWONBIN",
     nav1: "자기소개",
     nav2: "동원로엑스 프로젝트",
     nav3: "삼성증권 프로젝트",
@@ -114,7 +114,7 @@ export const LANGUAGE = {
     }
   },
   ja: {
-    titleName: "キムウォンビン",
+    titleName: "KIMWONBIN",
     nav1: "自己紹介",
     nav2: "Dongwon Loex プロジェクト",
     nav3: "サムスン証券 プロジェクト",

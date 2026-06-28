@@ -16,7 +16,7 @@ export default function Profile({ t }: profileProps) {
     },
     {
       title: "Backend & DB",
-      skills: ["Java", "Spring Boot", "MySQL", "MariaDB", "PostgreSQL"]
+      skills: ["Java", "Spring Boot", "MySQL", "MariaDB"]
     },
     {
       title: "Tools & DevOps",
