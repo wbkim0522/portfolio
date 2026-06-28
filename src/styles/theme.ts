@@ -8,7 +8,7 @@ const COMPONENT_TOKENS = {
 
 export const STYLES = {
   // APP
-  wrapper: "max-w-[1600px] min-h-screen lg:h-screen lg:overflow-hidden mx-auto px-4 lg:px-6 xl:px-8 w-full flex flex-col lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] gap-6 xl:gap-8 pt-4 pb-8 lg:py-8 text-neutral-800 dark:text-neutral-100",
+  wrapper: "max-w-[1600px] min-h-screen h-full lg:h-screen lg:overflow-hidden mx-auto px-4 lg:px-6 xl:px-8 w-full flex flex-col lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] gap-6 xl:gap-8 pt-4 pb-8 lg:py-8 text-neutral-800 dark:text-neutral-200 selection:bg-indigo-500/10 selection:text-indigo-500 font-sans antialiased bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300",
   main: "w-full min-w-0 lg:h-full flex flex-col",
   mainCard: `${COMPONENT_TOKENS.CONTAINER} flex-grow p-6 xl:p-8 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto`,
 
