@@ -168,7 +168,7 @@ export const LANGUAGE = {
           role: "Web標準画面移行開発",
           stack: ["WebSquare", "JavaScript"],
           tasks: [
-            "既存の全社文書管理(EDMS)画面のWebSquare標準環境マイグレーションを専任",
+            "既存の全社文書管理(EDMS)画面のWebSquare標準環境マイグレーションを専任で担当",
             "JavaScriptベースのUIスクリプト最適化によるシステム画面の機能およびパフォーマンスの改善"
           ]
         },
