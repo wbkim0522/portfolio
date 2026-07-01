@@ -2,12 +2,11 @@ import { useState } from 'react';
 import type { LanguageType, TranslationType } from '../../data/language';
 import { STYLES } from '../../styles/theme'
 import { Sun, Moon } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router';
 
 interface navigationProps {
   lang: LanguageType;
   setLang: (lang: LanguageType) => void;
-  activeMenu: number;
-  setActiveMenu: (idx: number) => void;
   theme: string;
   setTheme: (theme: string) => void;
   t: TranslationType;
@@ -16,10 +15,11 @@ interface navigationProps {
 export const Navigation = ({
   t,
   lang, setLang,
-  activeMenu, setActiveMenu,
   theme, setTheme
 }: navigationProps) => {
 
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -51,18 +51,19 @@ export const Navigation = ({
 
       {/* 메뉴 */}
       <ul className={`${STYLES.menuList} ${isOpen ? STYLES.openActive : STYLES.openInactive}`}>
-        {[t.nav1, t.nav2, t.nav3].map((item, idx) => {
-          const isActive = activeMenu === idx;
+        {Object.entries(t.nav).map(([key, value]) => {
+          const targetPath = `/${key}`
+          const isActive = location.pathname === targetPath;
 
           return (
-            <li key={idx}
+            <li key={key}
               onClick={() => {
-                setActiveMenu(idx);
+                navigate(targetPath);
                 setOpen(false)
               }}
               className={`${STYLES.menuItem} ${isActive ? STYLES.menuActive : ''}`}
             >
-              <span>{item}</span>
+              <span>{value}</span>
             </li>
           )
         })}

@@ -3,7 +3,7 @@ import { Terminal, Mail} from 'lucide-react';
 import { STYLES } from "../styles/theme";
 
 interface profileProps {
-  t: TranslationType['profile'];
+  t: TranslationType['profileData'];
 };
 
 export default function Profile({ t }: profileProps) {

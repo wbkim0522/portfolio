@@ -115,5 +115,12 @@ export const STYLES = {
 
   timelineTaskList: "list-none flex flex-col gap-1.5 mt-3.5",
   timelineTaskItem: "text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed flex items-start gap-1.5",
-  timelineTaskBullet: "text-indigo-500 dark:text-indigo-400 mt-1 select-none shrink-0"
+  timelineTaskBullet: "text-indigo-500 dark:text-indigo-400 mt-1 select-none shrink-0",
+
+  // 에러 페이지
+  errorWrapper: "text-center py-6 px-4 flex flex-col items-center",
+  errorIcon: "w-16 h-16 text-indigo-600 dark:text-indigo-400 mb-6 animate-bounce",
+  errorTitle: "text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4",
+  errorDescription: "text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-8 whitespace-pre-wrap",
+  errorButton: "bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-200 hover:bg-indigo-700 hover:-translate-y-0.5 active:translate-y-0",
 };

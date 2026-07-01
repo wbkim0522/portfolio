@@ -1,9 +1,11 @@
 export const LANGUAGE = {
   ko: {
     titleName: "KIMWONBIN",
-    nav1: "자기소개",
-    nav2: "동원로엑스 프로젝트",
-    nav3: "삼성증권 프로젝트",
+    nav: {
+      profile: "자기소개",
+      "project/dongwon": "동원로엑스 프로젝트",
+      "project/samsung": "삼성증권 프로젝트",
+    },
 
     projectLabels: {
       tasksTitle: "주요 수행 업무",
@@ -15,7 +17,7 @@ export const LANGUAGE = {
       troubleResult: "도출 결과 (Result)"
     },
 
-    profile: {
+    profileData: {
       name: "김원빈",
       experiences: [
         {
@@ -111,13 +113,21 @@ export const LANGUAGE = {
         solution: "컴포넌트의 생명주기(Lifecycle) 로딩 완료 이벤트를 제어하여 차순위 탭의 화면 경로를 순차적으로 동적 바인딩하는 로딩 파이프라인을 구축하고, WFrame 내부 메타데이터를 파싱하여 자식 화면 규격에 맞춰 부모 레이아웃 크기를 실시간 조정하는 자체 리사이징 제어 로직 구현",
         result: "공백이던 핵심 개인화 기능을 순수 컴포넌트 조합으로 완벽히 복원하여 100% 일정 내 온타임 배포를 완수하였으며, 발생한 결함에 대한 신속한 핫픽스 대응으로 시스템 조기 안정화 달성"
       }
+    },
+
+    errorMsg: {
+      title: "길을 잃으셨나요?",
+      description: "요청하신 페이지를 찾을 수 없습니다.\n입력하신 주소가 정확한지 다시 한번 확인해 주세요.",
+      button: "홈으로 돌아가기"
     }
   },
   ja: {
     titleName: "KIMWONBIN",
-    nav1: "自己紹介",
-    nav2: "Dongwon Loex プロジェクト",
-    nav3: "サムスン証券 プロジェクト",
+    nav: {
+      profile: "自己紹介",
+      "project/dongwon": "Dongwon Loex プロジェクト",
+      "project/samsung": "Samsung 証券 プロジェクト",
+    },
 
     projectLabels: {
       tasksTitle: "主な担当業務",
@@ -129,7 +139,7 @@ export const LANGUAGE = {
       troubleResult: "結果 (Result)"
     },
 
-    profile: {
+    profileData: {
       name: "キムウォンビン",
       experiences: [
         {
@@ -225,6 +235,12 @@ export const LANGUAGE = {
         solution: "コンポーネントのライフサイクル(Lifecycle)ロード完了イベントを制御し、次順位タブの画面パスを順次動的バインディングするロードパイプラインを構築。さらにWFrame内部のメタデータをパースして子画面の規格に合わせ、親レイアウトのサイズをリアルタイムに調整する独自のリサイジング制御ロジックを実装",
         result: "機能が欠落していたコアなパーソナライズ機能を純粋なコンポーネントの組み合わせで完全に復元し、100%スケジュール通りのオンタイムデプロイ(On-Time)を完遂。さらに発生した欠陥に対する迅速なホットフィックス対応により、システムの早期安定化を達成"
       }
+    },
+
+    errorMsg: {
+      title: "ページが見つかりません",
+      description: "アクセスされたページは見つかりませんでした。\nURLが正しいか、もう一度ご確認ください。",
+      button: "トップページへ"
     }
   }
 } as const;
