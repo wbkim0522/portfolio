@@ -9,7 +9,7 @@ import samsungImg from "./assets/samsung_mok.svg";
 
 export default function App() {
 
-  const [lang, setLang] = useState<LanguageType>(() => {
+  const [lang, setLang] = useState<LanguageType>(() => { 
     return  navigator.languages[0] === 'ja' ? 'ja' : 'ko';
   });
   const [theme, setTheme] = useState('light');
