@@ -3,8 +3,8 @@ import { Navigation } from "./components/Navigation/Navigation";
 import { LANGUAGE, type LanguageType } from "./data/language";
 import { Navigate, Route, Routes } from "react-router";
 import { STYLES } from "./styles/theme";
-import Profile from "./pages/Profile";
-import Project from "./components/Project/Project";
+import ProfileFeature from "./features/profile/ProfileFeature";
+import ProjectFeature from "./features/project/ProjectFeature";
 import dongwonImg from "./assets/dongwon_mok.svg";
 import samsungImg from "./assets/samsung_mok.svg";
 import Error from "./pages/Error";
@@ -39,11 +39,11 @@ export default function App() {
       <main className={STYLES.main}>
         <Routes>
           <Route path="/" element={<Navigate to="/profile" replace />} />
-          <Route path="/profile" element={<Profile t={text.profileData} />} />
+          <Route path="/profile" element={<ProfileFeature t={text.profileData} />} />
           <Route path="/project" >
             <Route index element={<Navigate to="dongwon" replace />} />
-            <Route path="dongwon" element={<Project t={text.project1} labels={text.projectLabels} imgSrc={dongwonImg} />} />
-            <Route path="samsung" element={<Project t={text.project2} labels={text.projectLabels} imgSrc={samsungImg} />} />
+            <Route path="dongwon" element={<ProjectFeature t={text.project1} labels={text.projectLabels} imgSrc={dongwonImg} />} />
+            <Route path="samsung" element={<ProjectFeature t={text.project2} labels={text.projectLabels} imgSrc={samsungImg} />} />
           </Route>
           <Route path="*" element={<Error t={text.errorMsg}/>} />
         </Routes>

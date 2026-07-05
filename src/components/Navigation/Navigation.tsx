@@ -96,12 +96,12 @@ export const Navigation = ({
             <button
               onClick={() => setTheme('light')}
               className={theme === 'light' ? STYLES.switchBtnActive : STYLES.switchBtnInactive}>
-              <Sun size={14} className="inline-block" />
+              <Sun size={14} className={STYLES.themeIcon} />
             </button>
             <button
               onClick={() => setTheme('dark')}
               className={theme === 'dark' ? STYLES.switchBtnActive : STYLES.switchBtnInactive}>
-              <Moon size={14} className="inline-block" />
+              <Moon size={14} className={STYLES.themeIcon} />
             </button>
           </div>
         </div>
