@@ -19,7 +19,7 @@ const NAVIGATION_LAYOUT = {
   brandText: "font-bold tracking-tight text-neutral-800 dark:text-neutral-100 shrink-0 text-sm sm:text-base truncate",
   menuButton: "lg:hidden p-2 text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors focus:outline-none cursor-pointer row-start-1 col-start-3 justify-self-end",
   menuList: `${SURFACE_TOKENS.FLOATING} absolute lg:relative top-full lg:top-0 left-0 w-full lg:w-auto flex flex-col p-4 lg:p-0 lg:pt-2 lg:bg-transparent lg:border-none lg:shadow-none lg:rounded-none z-40 transition-all duration-300 ease-out transform lg:transform-none! lg:opacity-100! lg:visible!`,
-  menuItem: `${SURFACE_TOKENS.ITEM} px-2.5 py-1.5 lg:px-3 lg:py-2 xl:px-4 xl:py-2.5 text-xs lg:text-sm font-bold cursor-pointer transition-all shrink-0 w-full block`,
+  menuItem: `${SURFACE_TOKENS.ITEM} px-2.5 py-1.5 lg:px-3 lg:py-2 xl:px-4 xl:py-2.5 text-xs lg:text-sm font-bold cursor-pointer transition-all shrink-0 w-full block whitespace-normal break-keep`,
   menuItemActive: "text-indigo-600! dark:text-white! bg-indigo-50! dark:bg-neutral-800!",
   menuOpen: "translate-y-0 opacity-100 visible",
   menuClosed: "-translate-y-4 opacity-0 invisible",

@@ -7,6 +7,7 @@ import ProfileFeature from "./features/profile/ProfileFeature";
 import ProjectFeature from "./features/project/ProjectFeature";
 import dongwonImg from "./assets/dongwon_mok.svg";
 import samsungImg from "./assets/samsung_mok.svg";
+import lehuaImg from "./assets/lehua_mok.svg";
 import Error from "./pages/Error";
 
 export default function App() {
@@ -44,6 +45,7 @@ export default function App() {
             <Route index element={<Navigate to="dongwon" replace />} />
             <Route path="dongwon" element={<ProjectFeature t={text.project1} labels={text.projectLabels} imgSrc={dongwonImg} />} />
             <Route path="samsung" element={<ProjectFeature t={text.project2} labels={text.projectLabels} imgSrc={samsungImg} />} />
+            <Route path="lehua" element={<ProjectFeature t={text.project3} labels={text.projectLabels} imgSrc={lehuaImg} />} />
           </Route>
           <Route path="*" element={<Error t={text.errorMsg}/>} />
         </Routes>

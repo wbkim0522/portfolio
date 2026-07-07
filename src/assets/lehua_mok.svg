@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%">
+  <defs>
+    <!-- 고급스러운 앰버 가미된 섀도우 필터 -->
+    <filter id="app-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#451A03" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#451A03" flood-opacity="0.03"/>
+    </filter>
+  </defs>
+
+  <!-- [1] 브라우저 앱 전체 메인 컨테이너 (부드러운 아이보리 화이트) -->
+  <rect x="15" y="15" width="970" height="550" rx="14" fill="#FFFDFB" filter="url(#app-shadow)" stroke="#FFE082" stroke-width="1.5" />
+
+  <!-- [2] 상단 브라우저 윈도우 헤더 영역 (따뜻한 크림 옐로우 테마) -->
+  <path d="M 15 29 A 14 14 0 0 1 29 15 L 971 15 A 14 14 0 0 1 985 29 L 985 58 L 15 58 Z" fill="#FFF9E6" stroke="#FFE082" stroke-width="1" />
+  
+  <!-- 맥 스타일 윈도우 컨트롤 창 버튼 -->
+  <circle cx="42" cy="36.5" r="6" fill="#FF5F56" />
+  <circle cx="62" cy="36.5" r="6" fill="#FFBD2E" />
+  <circle cx="27C93F" cy="36.5" r="6" fill="#27C93F" />
+  
+  <!-- 상단 헤더 텍스트 블록 플레이스홀더 (웜 톤 변경) -->
+  <rect x="125" y="31" width="90" height="11" rx="4.5" fill="#FFE0B2" />
+  <rect x="230" y="33" width="65" height="7" rx="3.5" fill="#FFE0B2" />
+
+  <!-- [3] 좌측 네비게이션 사이드바 (연한 파스텔 꿀 노란색 테마) -->
+  <path d="M 15 58 L 215 58 L 215 565 L 29 565 A 14 14 0 0 1 15 551 Z" fill="#FFF8E1" />
+  <line x1="215" y1="58" x2="215" y2="565" stroke="#FFD54F" stroke-width="1.5" />
+  
+  <!-- 사이드바 메뉴 아이템들 (웜 브라운/골드 플레이스홀더) -->
+  <rect x="35" y="90" width="130" height="13" rx="4" fill="#FFE0B2" />
+  <rect x="35" y="130" width="150" height="13" rx="4" fill="#FFCC80" />
+  
+  <!-- 활성화된 오렌지 테마 사이드바 메뉴 (Active State 강조) -->
+  <rect x="23" y="165" width="180" height="36" rx="8" fill="#FFCC80" fill-opacity="0.4" />
+  <rect x="38" y="176.5" width="115" height="13" rx="4" fill="#E65100" />
+  
+  <rect x="35" y="225" width="120" height="13" rx="4" fill="#FFCC80" />
+  <rect x="35" y="265" width="140" height="13" rx="4" fill="#FFCC80" />
+
+  <!-- [4] 우측 메인 콘텐츠 대시보드 영역 -->
+  <!-- 비활성 탭 웜 톤 변경 -->
+  <rect x="245" y="85" width="110" height="15" rx="4.5" fill="#BCAAA4" />
+  
+  <!-- 활성화된 메인 탭 강조 (주황색 언더라인 구조 반영) -->
+  <rect x="385" y="85" width="125" height="15" rx="4.5" fill="#FF6D00" />
+  <line x1="365" y1="112" x2="530" y2="112" stroke="#FF6D00" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="215" y1="112" x2="985" y2="112" stroke="#FFF3E0" stroke-width="1.5" />
+
+  <!-- [5] 상단 알림 배너 (옐로우 테마에 완전히 녹아드는 하이라이트 섹션) -->
+  <rect x="245" y="132" width="715" height="56" rx="8" fill="#FFFDE7" stroke="#FFD54F" stroke-width="1.5" />
+  
+  <!-- 배너 내부 체크마크 원형 배지 -->
+  <circle cx="275" cy="160" r="13" fill="#FFB300" />
+  <path d="M 269 160 L 273 164 L 281 155" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- 배너 텍스트 라인 플레이스홀더 -->
+  <rect x="302" y="147" width="170" height="11" rx="4" fill="#F57C00" />
+  <rect x="302" y="165" width="420" height="8" rx="3" fill="#BCAAA4" />
+
+  <!-- [6] 데이터 그리드 테이블 (Data Grid Table) -->
+  <!-- 테이블 헤더 바 (연한 옐로우-베이지 톤) -->
+  <rect x="245" y="210" width="715" height="38" rx="6" fill="#FFFDF0" stroke="#FFE082" stroke-width="1" />
+  
+  <!-- 헤더 컬럼 타이틀 및 정렬 데코레이션 아이콘 모사 -->
+  <circle cx="259" cy="229" r="2" fill="#BCAAA4" /><circle cx="265" cy="229" r="2" fill="#BCAAA4" />
+  <rect x="277" y="222" width="65" height="13" rx="3.5" fill="#8D6E63" />
+  
+  <circle cx="444" cy="229" r="2" fill="#FF6D00" /><circle cx="450" cy="229" r="2" fill="#FF6D00" />
+  <rect x="462" y="222" width="85" height="13" rx="3.5" fill="#FF6D00" />
+  
+  <circle cx="639" cy="229" r="2" fill="#BCAAA4" /><circle cx="645" cy="229" r="2" fill="#BCAAA4" />
+  <rect x="657" y="222" width="70" height="13" rx="3.5" fill="#8D6E63" />
+  
+  <circle cx="829" cy="229" r="2" fill="#BCAAA4" /><circle cx="835" cy="229" r="2" fill="#BCAAA4" />
+  <rect x="847" y="222" width="55" height="13" rx="3.5" fill="#8D6E63" />
+
+  <!-- 테이블 각 로우 구분선 (연한 웜 오렌지 라인) -->
+  <line x1="245" y1="302" x2="960" y2="302" stroke="#FFF3E0" stroke-width="1.2" />
+  <line x1="245" y1="356" x2="960" y2="356" stroke="#FFF3E0" stroke-width="1.2" />
+  <line x1="245" y1="410" x2="960" y2="410" stroke="#FFF3E0" stroke-width="1.2" />
+  <line x1="245" y1="464" x2="960" y2="464" stroke="#FFF3E0" stroke-width="1.2" />
+  <line x1="245" y1="518" x2="960" y2="518" stroke="#FFF3E0" stroke-width="1.2" />
+
+  <!-- Row 1 데이터 (기존 그레이 텍스트를 고급스러운 다크 마호가니/브라운으로 변경) -->
+  <rect x="277" y="271" width="105" height="13" rx="3.5" fill="#4E342E" />
+  <rect x="462" y="271" width="75" height="13" rx="3.5" fill="#FFA726" />
+  <rect x="657" y="271" width="115" height="13" rx="3.5" fill="#6D4C41" />
+  <!-- 초록색 성공 배지 -->
+  <rect x="847" y="265" width="65" height="24" rx="12" fill="#DCFCE7" />
+  <rect x="862" y="272" width="35" height="10" rx="2" fill="#15803D" />
+
+  <!-- Row 2 데이터 -->
+  <rect x="277" y="325" width="90" height="13" rx="3.5" fill="#4E342E" />
+  <rect x="462" y="325" width="60" height="13" rx="3.5" fill="#FFB74D" />
+  <rect x="657" y="325" width="95" height="13" rx="3.5" fill="#6D4C41" />
+  <rect x="847" y="319" width="65" height="24" rx="12" fill="#DCFCE7" />
+  <rect x="862" y="326" width="35" height="10" rx="2" fill="#15803D" />
+
+  <!-- Row 3 데이터 (중요 얼럿 상태 - 빨간색 배지 유지로 포인트) -->
+  <rect x="277" y="379" width="125" height="13" rx="3.5" fill="#4E342E" />
+  <rect x="462" y="379" width="80" height="13" rx="3.5" fill="#FFA726" />
+  <rect x="657" y="379" width="130" height="13" rx="3.5" fill="#6D4C41" />
+  <rect x="847" y="373" width="65" height="24" rx="12" fill="#FEE2E2" />
+  <rect x="862" y="380" width="35" height="10" rx="2" fill="#B91C1C" />
+
+  <!-- Row 4 데이터 -->
+  <rect x="277" y="433" width="80" height="13" rx="3.5" fill="#4E342E" />
+  <rect x="462" y="433" width="55" height="13" rx="3.5" fill="#FFB74D" />
+  <rect x="657" y="433" width="85" height="13" rx="3.5" fill="#6D4C41" />
+  <rect x="847" y="427" width="65" height="24" rx="12" fill="#DCFCE7" />
+  <rect x="862" y="434" width="35" height="10" rx="2" fill="#15803D" />
+
+  <!-- [7] 최하단 푸터 및 페이지네이션 컴포넌트 -->
+  <rect x="245" y="538" width="115" height="13" rx="4" fill="#FFCC80" />
+  <!-- 우측 하단 활성화 전용 피드 배지 구조 모사 -->
+  <rect x="830" y="533" width="130" height="24" rx="12" fill="#E8F5E9" />
+  <circle cx="848" cy="545" r="4.5" fill="#2E7D32" />
+  <rect x="861" y="539" width="80" height="12" rx="3" fill="#2E7D32" />
+</svg>
