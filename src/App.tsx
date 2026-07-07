@@ -45,7 +45,7 @@ export default function App() {
             <Route index element={<Navigate to="dongwon" replace />} />
             <Route path="dongwon" element={<ProjectFeature t={text.project1} labels={text.projectLabels} imgSrc={dongwonImg} />} />
             <Route path="samsung" element={<ProjectFeature t={text.project2} labels={text.projectLabels} imgSrc={samsungImg} />} />
-            <Route path="lehua" element={<ProjectFeature t={text.project3} labels={text.projectLabels} imgSrc={lehuaImg} />} />
+            <Route path="solution" element={<ProjectFeature t={text.project3} labels={text.projectLabels} imgSrc={lehuaImg} />} />
           </Route>
           <Route path="*" element={<Error t={text.errorMsg}/>} />
         </Routes>

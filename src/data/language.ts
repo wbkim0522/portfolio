@@ -5,7 +5,7 @@ export const LANGUAGE = {
       profile: "자기소개",
       "project/dongwon": "동원로엑스 프로젝트",
       "project/samsung": "삼성증권 프로젝트",
-      "project/lehua": "사원관리 솔루션 프로젝트",
+      "project/solution": "사원관리 솔루션 프로젝트",
     },
 
     projectLabels: {
@@ -146,7 +146,7 @@ export const LANGUAGE = {
       profile: "自己紹介",
       "project/dongwon": "Dongwon Loex プロジェクト",
       "project/samsung": "Samsung 証券 プロジェクト",
-      "project/lehua": "社員管理 プロジェクト",
+      "project/solution": "社員管理 プロジェクト",
     },
 
     projectLabels: {
