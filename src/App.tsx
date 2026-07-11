@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navigation } from "./components/Navigation/Navigation";
 import { LANGUAGE, type LanguageType } from "./data/language";
 import { Navigate, Route, Routes } from "react-router";
@@ -17,6 +17,10 @@ export default function App() {
   });
   const [theme, setTheme] = useState('');
   const text = LANGUAGE[lang];
+
+  useEffect(() => {
+    document.body.classList.toggle('dark', theme === 'dark');
+  }, [theme]);
 
   return (
     <div className={`min-h-screen w-full bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300 ${theme}`}>

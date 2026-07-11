@@ -9,6 +9,7 @@
     font-family: 'Pretendard', 'Noto Sans JP', sans-serif;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    @apply bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300;
   }
 
   button, input, textarea, select {
