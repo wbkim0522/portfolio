@@ -23,7 +23,7 @@ export const Navigation = ({
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <nav className={STYLES.nav}>
+    <nav className={`${STYLES.nav} ${isOpen ? 'rounded-b-none! border-b-0! shadow-none!' : ''}`}>
       {/* 헤더영역 */}
       <div className={STYLES.navHeader}>
         {/* 로고 및 타이틀 */}
@@ -49,7 +49,7 @@ export const Navigation = ({
         </button>
       </div>
 
-      {/* 메뉴 (모바일: 같은 박스 안에서 높이가 펼쳐지는 아코디언 / 데스크탑: 사이드바 flex 컬럼의 일부) */}
+      {/* 메뉴 (모바일: nav 하단에 겹쳐 뜨는 플로팅 패널 / 데스크탑: 사이드바 flex 컬럼의 일부) */}
       <div className={`${STYLES.menuCollapse} ${isOpen ? STYLES.menuCollapseOpen : STYLES.menuCollapseClosed}`}>
         <div className={STYLES.menuInner}>
 
@@ -75,7 +75,7 @@ export const Navigation = ({
 
           {/* 기능 그룹 */}
           <div className={STYLES.funcGroup}>
-            {/* 언어 선택 라인 */}
+            {/* 언어 선택 */}
             <div className={STYLES.funcBox}>
               <span className={STYLES.funcTitle}>LANGUAGE</span>
               <div className={STYLES.switchBar}>
@@ -92,7 +92,7 @@ export const Navigation = ({
               </div>
             </div>
 
-            {/* 다크모드 */}
+            {/* 다크 모드 */}
             <div className={STYLES.funcBox}>
               <span className={STYLES.funcTitle}>THEME</span>
               <div className={STYLES.switchBar}>
