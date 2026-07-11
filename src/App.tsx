@@ -20,6 +20,9 @@ export default function App() {
 
   return (
     <div className={`min-h-screen w-full bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300 ${theme}`}>
+      {/* Safari 색상 신호용 */}
+      <div className={STYLES.bottomColorSignal} aria-hidden="true" />
+
       <div className={`${STYLES.wrapper}`}>
 
         <Navigation
