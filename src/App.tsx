@@ -20,7 +20,6 @@ export default function App() {
 
   return (
     <div className={`min-h-screen w-full bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300 ${theme}`}>
-      <meta name="theme-color" content={theme === 'dark' ? '#0a0a0a' : '#fafafa'} />
       <div className={`${STYLES.wrapper}`}>
 
         <Navigation
