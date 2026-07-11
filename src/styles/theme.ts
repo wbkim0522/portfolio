@@ -3,7 +3,7 @@ const SURFACE_TOKENS = {
   FLOATING: "bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 rounded-b-2xl shadow-xl",
   ITEM: "rounded-lg lg:rounded-xl text-neutral-600 dark:text-neutral-400 hover:text-indigo-600 dark:hover:text-white hover:bg-indigo-50/50 dark:hover:bg-neutral-800",
   CONTROL_TRACK: "bg-neutral-100 dark:bg-neutral-800 rounded-lg p-0.5 flex items-center gap-0.5 shrink-0",
-  CONTROL_BTN: "rounded-md text-sm lg:text-xs leading-none transition-all cursor-pointer w-13 h-8 lg:w-8 lg:h-6 flex items-center justify-center shrink-0"
+  CONTROL_BTN: "rounded-md text-xs leading-none transition-all cursor-pointer w-12 h-7 lg:w-11 lg:h-6 flex items-center justify-center shrink-0"
 };
 
 const APP_LAYOUT = {
@@ -27,7 +27,7 @@ const NAVIGATION_LAYOUT = {
   controlTrack: SURFACE_TOKENS.CONTROL_TRACK,
   controlButtonActive: `${SURFACE_TOKENS.CONTROL_BTN} font-black bg-white dark:bg-neutral-700 text-indigo-600 dark:text-indigo-400 shadow-sm`,
   controlButtonInactive: `${SURFACE_TOKENS.CONTROL_BTN} font-bold text-neutral-400 dark:text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300`,
-  functionGroup: "flex flex-col items-stretch gap-3 w-full pt-4 mt-4 border-t border-neutral-100 dark:border-neutral-800 lg:mt-auto",
+  functionGroup: "flex flex-col items-stretch gap-2 w-full pt-4 mt-4 border-t border-neutral-100 dark:border-neutral-800 lg:mt-auto",
   functionBox: "flex items-center justify-between w-full px-2",
   functionTitle: "block text-[11px] font-bold text-neutral-400 dark:text-neutral-500 tracking-wider",
   logoWrap: "flex items-center gap-3",
