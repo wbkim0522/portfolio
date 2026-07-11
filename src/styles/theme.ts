@@ -7,12 +7,12 @@ const SURFACE_TOKENS = {
 
 const APP_LAYOUT = {
   shell: "relative max-w-[1600px] min-h-screen h-full lg:h-screen lg:overflow-hidden mx-auto px-4 lg:px-6 xl:px-8 w-full flex flex-col lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] gap-6 xl:gap-8 pt-4 pb-8 lg:py-8 text-neutral-800 dark:text-neutral-200 selection:bg-indigo-500/10 selection:text-indigo-500 font-sans antialiased",
-  main: "w-full min-w-0 mt-20 lg:mt-0 lg:h-full flex flex-col",
+  main: "w-full min-w-0 mt-16 lg:mt-0 lg:h-full flex flex-col",
   pageSurface: `${SURFACE_TOKENS.CARD} flex-grow p-6 xl:p-8 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto`
 };
 
 const NAVIGATION_LAYOUT = {
-  sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white/75 dark:bg-neutral-900/75 backdrop-blur-md lg:bg-white lg:dark:bg-neutral-900 lg:backdrop-blur-none transition-colors duration-300 fixed inset-x-4 top-4 lg:sticky lg:inset-auto lg:top-8 lg:w-full z-[100] grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6`,
+  sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white/75 dark:bg-neutral-900/75 backdrop-blur-md lg:bg-white lg:dark:bg-neutral-900 lg:backdrop-blur-none transition-colors duration-300 fixed inset-x-4 top-1 lg:sticky lg:inset-auto lg:top-8 lg:w-full z-[100] grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6`,
   header: "contents lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-full lg:min-w-0 lg:gap-2",
   brandButton: "w-8 h-8 rounded-full bg-indigo-600 text-white font-black text-sm flex items-center justify-center shadow-md shadow-indigo-500/20 shrink-0",
   brandText: "font-bold tracking-tight text-neutral-800 dark:text-neutral-100 shrink-0 text-sm sm:text-base truncate",
