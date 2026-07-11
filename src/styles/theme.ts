@@ -17,7 +17,7 @@ const NAVIGATION_LAYOUT = {
   brandButton: "w-8 h-8 rounded-full bg-indigo-600 text-white font-black text-sm flex items-center justify-center shadow-md shadow-indigo-500/20 shrink-0",
   brandText: "font-bold tracking-tight text-neutral-800 dark:text-neutral-100 shrink-0 text-sm sm:text-base truncate",
   menuButton: "lg:hidden p-2 text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors focus:outline-none cursor-pointer row-start-1 col-start-3 justify-self-end",
-  menuCollapse: "col-span-3 overflow-hidden transition-[max-height] duration-[400ms] ease-in-out lg:transition-none lg:overflow-visible lg:flex lg:flex-col lg:flex-1 lg:min-h-0",
+  menuCollapse: "col-span-3 overflow-hidden transition-[max-height] duration-[400ms] ease-in-out lg:transition-none lg:overflow-visible lg:max-h-none lg:flex lg:flex-col lg:flex-1 lg:min-h-0",
   menuCollapseOpen: "max-h-72",
   menuCollapseClosed: "max-h-0",
   menuInner: "flex flex-col pt-4 lg:pt-2 lg:contents",
