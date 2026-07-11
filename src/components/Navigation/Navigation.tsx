@@ -23,7 +23,7 @@ export const Navigation = ({
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <nav className={`${STYLES.nav} ${isOpen ? 'rounded-b-none! border-b-0! shadow-none!' : ''}`}>
+    <nav className={`${STYLES.nav} ${isOpen ? 'rounded-b-none! border-b-0! shadow-none! delay-0!' : 'delay-400!'}`}>
       {/* 헤더영역 */}
       <div className={STYLES.navHeader}>
         {/* 로고 및 타이틀 */}
