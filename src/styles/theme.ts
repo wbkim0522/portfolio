@@ -3,7 +3,7 @@ const SURFACE_TOKENS = {
   FLOATING: "bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 rounded-b-2xl shadow-xl",
   ITEM: "rounded-lg lg:rounded-xl text-neutral-600 dark:text-neutral-400 hover:text-indigo-600 dark:hover:text-white hover:bg-indigo-50/50 dark:hover:bg-neutral-800",
   CONTROL_TRACK: "bg-neutral-100 dark:bg-neutral-800 rounded-lg p-0.5 flex items-center gap-0.5 shrink-0",
-  CONTROL_BTN: "rounded-md text-xs px-2.5 py-1 transition-all cursor-pointer"
+  CONTROL_BTN: "rounded-md text-xs leading-none transition-all cursor-pointer w-8 h-6 flex items-center justify-center shrink-0"
 };
 
 const APP_LAYOUT = {
