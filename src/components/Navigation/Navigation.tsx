@@ -23,7 +23,7 @@ export const Navigation = ({
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <nav className={`${STYLES.nav} ${isOpen ? 'rounded-b-none! border-b-0! shadow-none! delay-0!' : 'delay-400!'}`}>
+    <nav className={STYLES.nav}>
       {/* 헤더영역 */}
       <div className={STYLES.navHeader}>
         {/* 로고 및 타이틀 */}
@@ -49,7 +49,7 @@ export const Navigation = ({
         </button>
       </div>
 
-      {/* 메뉴 (모바일: nav 하단에 겹쳐 뜨는 플로팅 패널 / 데스크탑: 사이드바 flex 컬럼의 일부) */}
+      {/* 메뉴 */}
       <div className={`${STYLES.menuCollapse} ${isOpen ? STYLES.menuCollapseOpen : STYLES.menuCollapseClosed}`}>
         <div className={STYLES.menuInner}>
 

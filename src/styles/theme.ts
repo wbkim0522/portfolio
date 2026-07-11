@@ -6,21 +6,21 @@ const SURFACE_TOKENS = {
 };
 
 const APP_LAYOUT = {
-  shell: "max-w-[1600px] min-h-screen h-full lg:h-screen lg:overflow-hidden mx-auto px-4 lg:px-6 xl:px-8 w-full flex flex-col lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] gap-6 xl:gap-8 pt-4 pb-8 lg:py-8 text-neutral-800 dark:text-neutral-200 selection:bg-indigo-500/10 selection:text-indigo-500 font-sans antialiased",
-  main: "w-full min-w-0 lg:h-full flex flex-col",
+  shell: "relative max-w-[1600px] min-h-screen h-full lg:h-screen lg:overflow-hidden mx-auto px-4 lg:px-6 xl:px-8 w-full flex flex-col lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] gap-6 xl:gap-8 pt-4 pb-8 lg:py-8 text-neutral-800 dark:text-neutral-200 selection:bg-indigo-500/10 selection:text-indigo-500 font-sans antialiased",
+  main: "w-full min-w-0 mt-20 lg:mt-0 lg:h-full flex flex-col",
   pageSurface: `${SURFACE_TOKENS.CARD} flex-grow p-6 xl:p-8 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto`
 };
 
 const NAVIGATION_LAYOUT = {
-  sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm lg:bg-white lg:dark:bg-neutral-900 lg:backdrop-blur-none transition-[border-radius,box-shadow,border-color,border-bottom-width] duration-0 lg:transition-none sticky top-0 lg:top-8 z-[100] w-full grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6 relative`,
+  sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white/75 dark:bg-neutral-900/75 backdrop-blur-md lg:bg-white lg:dark:bg-neutral-900 lg:backdrop-blur-none fixed inset-x-4 top-4 lg:sticky lg:inset-auto lg:top-8 lg:w-full z-[100] grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6`,
   header: "contents lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-full lg:min-w-0 lg:gap-2",
   brandButton: "w-8 h-8 rounded-full bg-indigo-600 text-white font-black text-sm flex items-center justify-center shadow-md shadow-indigo-500/20 shrink-0",
   brandText: "font-bold tracking-tight text-neutral-800 dark:text-neutral-100 shrink-0 text-sm sm:text-base truncate",
   menuButton: "lg:hidden p-2 text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors focus:outline-none cursor-pointer row-start-1 col-start-3 justify-self-end",
-  menuCollapse: "absolute lg:static top-full -inset-x-px lg:inset-auto lg:w-auto border-x border-b border-neutral-200 dark:border-neutral-800 rounded-b-2xl shadow-lg bg-white dark:bg-neutral-900 z-40 lg:z-auto lg:border-none lg:shadow-none lg:rounded-none lg:bg-transparent overflow-hidden transition-[max-height] duration-[400ms] ease-in-out lg:transition-none lg:overflow-visible lg:max-h-none lg:flex lg:flex-col lg:flex-1 lg:min-h-0 lg:pointer-events-auto!",
-  menuCollapseOpen: "max-h-72 pointer-events-auto",
-  menuCollapseClosed: "max-h-0 pointer-events-none",
-  menuInner: "flex flex-col p-4 lg:p-0 lg:pt-2 lg:contents",
+  menuCollapse: "col-span-3 overflow-hidden transition-[max-height] duration-[400ms] ease-in-out lg:transition-none lg:overflow-visible lg:max-h-none lg:flex lg:flex-col lg:flex-1 lg:min-h-0",
+  menuCollapseOpen: "max-h-72",
+  menuCollapseClosed: "max-h-0",
+  menuInner: "flex flex-col pt-4 lg:pt-2 lg:contents",
   menuNavList: "flex flex-col",
   menuItem: `${SURFACE_TOKENS.ITEM} px-2.5 py-1.5 lg:px-3 lg:py-2 xl:px-4 xl:py-2.5 text-xs lg:text-sm font-bold cursor-pointer transition-all shrink-0 w-full block whitespace-normal break-keep`,
   menuItemActive: "text-indigo-600! dark:text-white! bg-indigo-50! dark:bg-neutral-800!",
