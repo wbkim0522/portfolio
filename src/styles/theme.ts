@@ -13,7 +13,6 @@ const APP_LAYOUT = {
 };
 
 const NAVIGATION_LAYOUT = {
-  topBlurLayer: "lg:hidden fixed inset-x-0 top-0 h-20 backdrop-blur-md bg-white/30 dark:bg-neutral-900/30 z-30 pointer-events-none [mask-image:linear-gradient(to_top,transparent,black)] [-webkit-mask-image:linear-gradient(to_top,transparent,black)]",
   sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md lg:bg-white lg:dark:bg-neutral-900 lg:backdrop-blur-none sticky top-0 lg:top-8 z-50 w-full grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6 relative`,
   header: "contents lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-full lg:min-w-0 lg:gap-2",
   brandButton: "w-8 h-8 rounded-full bg-indigo-600 text-white font-black text-sm flex items-center justify-center shadow-md shadow-indigo-500/20 shrink-0",
@@ -133,7 +132,6 @@ export const STYLES = {
   mainCard: APP_LAYOUT.pageSurface,
 
   // Navigation
-  navTopBlur: NAVIGATION_LAYOUT.topBlurLayer,
   nav: NAVIGATION_LAYOUT.sidebar,
   navHeader: NAVIGATION_LAYOUT.header,
   logoBtn: NAVIGATION_LAYOUT.brandButton,
