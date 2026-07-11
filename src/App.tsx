@@ -23,30 +23,28 @@ export default function App() {
   }, [theme]);
 
   return (
-    <div className={`min-h-screen w-full bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300 ${theme}`}>
-      <div className={`${STYLES.wrapper}`}>
+    <div className={STYLES.wrapper}>
 
-        <Navigation
-          t={text}
-          lang={lang} setLang={setLang}
-          theme={theme} setTheme={setTheme}
-        />
+      <Navigation
+        t={text}
+        lang={lang} setLang={setLang}
+        theme={theme} setTheme={setTheme}
+      />
 
-        <main className={STYLES.main}>
-          <Routes>
-            <Route path="/" element={<Navigate to="/profile" replace />} />
-            <Route path="/profile" element={<ProfileFeature t={text.profileData} />} />
-            <Route path="/project" >
-              <Route index element={<Navigate to="dongwon" replace />} />
-              <Route path="dongwon" element={<ProjectFeature t={text.project1} labels={text.projectLabels} imgSrc={dongwonImg} />} />
-              <Route path="samsung" element={<ProjectFeature t={text.project2} labels={text.projectLabels} imgSrc={samsungImg} />} />
-              <Route path="solution" element={<ProjectFeature t={text.project3} labels={text.projectLabels} imgSrc={lehuaImg} />} />
-            </Route>
-            <Route path="*" element={<Error t={text.errorMsg} />} />
-          </Routes>
-        </main>
+      <main className={STYLES.main}>
+        <Routes>
+          <Route path="/" element={<Navigate to="/profile" replace />} />
+          <Route path="/profile" element={<ProfileFeature t={text.profileData} />} />
+          <Route path="/project" >
+            <Route index element={<Navigate to="dongwon" replace />} />
+            <Route path="dongwon" element={<ProjectFeature t={text.project1} labels={text.projectLabels} imgSrc={dongwonImg} />} />
+            <Route path="samsung" element={<ProjectFeature t={text.project2} labels={text.projectLabels} imgSrc={samsungImg} />} />
+            <Route path="solution" element={<ProjectFeature t={text.project3} labels={text.projectLabels} imgSrc={lehuaImg} />} />
+          </Route>
+          <Route path="*" element={<Error t={text.errorMsg} />} />
+        </Routes>
+      </main>
 
-      </div>
     </div>
   );
 }
