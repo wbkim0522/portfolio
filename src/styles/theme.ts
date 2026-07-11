@@ -7,18 +7,20 @@ const SURFACE_TOKENS = {
 };
 
 const APP_LAYOUT = {
-  shell: "max-w-[1600px] min-h-screen h-full lg:h-screen lg:overflow-hidden mx-auto px-4 lg:px-6 xl:px-8 w-full flex flex-col lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] gap-6 xl:gap-8 pt-4 pb-8 lg:py-8 text-neutral-800 dark:text-neutral-200 selection:bg-indigo-500/10 selection:text-indigo-500 font-sans antialiased bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300",
+  shell: "max-w-[1600px] min-h-screen h-full lg:h-screen lg:overflow-hidden mx-auto px-4 lg:px-6 xl:px-8 w-full flex flex-col lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] gap-6 xl:gap-8 pt-4 pb-8 lg:py-8 text-neutral-800 dark:text-neutral-200 selection:bg-indigo-500/10 selection:text-indigo-500 font-sans antialiased",
   main: "w-full min-w-0 lg:h-full flex flex-col",
   pageSurface: `${SURFACE_TOKENS.CARD} flex-grow p-6 xl:p-8 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto`
 };
 
 const NAVIGATION_LAYOUT = {
-  sidebar: `${SURFACE_TOKENS.CARD} sticky top-0 lg:top-8 z-50 w-full grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6 relative`,
+  topBlurLayer: "lg:hidden fixed inset-x-0 top-0 h-20 backdrop-blur-md bg-white/30 dark:bg-neutral-900/30 z-30 pointer-events-none [mask-image:linear-gradient(to_top,transparent,black)] [-webkit-mask-image:linear-gradient(to_top,transparent,black)]",
+  sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md lg:bg-white lg:dark:bg-neutral-900 lg:backdrop-blur-none sticky top-0 lg:top-8 z-50 w-full grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6 relative`,
   header: "contents lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-full lg:min-w-0 lg:gap-2",
   brandButton: "w-8 h-8 rounded-full bg-indigo-600 text-white font-black text-sm flex items-center justify-center shadow-md shadow-indigo-500/20 shrink-0",
   brandText: "font-bold tracking-tight text-neutral-800 dark:text-neutral-100 shrink-0 text-sm sm:text-base truncate",
   menuButton: "lg:hidden p-2 text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors focus:outline-none cursor-pointer row-start-1 col-start-3 justify-self-end",
-  menuList: `${SURFACE_TOKENS.FLOATING} absolute lg:relative top-full lg:top-0 left-0 w-full lg:w-auto flex flex-col p-4 lg:p-0 lg:pt-2 lg:bg-transparent lg:border-none lg:shadow-none lg:rounded-none z-40 transition-all duration-300 ease-out transform lg:transform-none! lg:opacity-100! lg:visible!`,
+  menuList: `${SURFACE_TOKENS.FLOATING} absolute lg:relative top-full lg:top-0 left-0 w-full lg:w-auto lg:flex-1 lg:min-h-0 flex flex-col p-4 lg:p-0 lg:pt-2 lg:bg-transparent lg:border-none lg:shadow-none lg:rounded-none z-40 transition-all duration-300 ease-out transform lg:transform-none! lg:opacity-100! lg:visible!`,
+  menuNavList: "flex flex-col",
   menuItem: `${SURFACE_TOKENS.ITEM} px-2.5 py-1.5 lg:px-3 lg:py-2 xl:px-4 xl:py-2.5 text-xs lg:text-sm font-bold cursor-pointer transition-all shrink-0 w-full block whitespace-normal break-keep`,
   menuItemActive: "text-indigo-600! dark:text-white! bg-indigo-50! dark:bg-neutral-800!",
   menuOpen: "translate-y-0 opacity-100 visible",
@@ -26,9 +28,9 @@ const NAVIGATION_LAYOUT = {
   controlTrack: SURFACE_TOKENS.CONTROL_TRACK,
   controlButtonActive: `${SURFACE_TOKENS.CONTROL_BTN} font-black bg-white dark:bg-neutral-700 text-indigo-600 dark:text-indigo-400 shadow-sm`,
   controlButtonInactive: `${SURFACE_TOKENS.CONTROL_BTN} font-bold text-neutral-400 dark:text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300`,
-  functionGroup: "row-start-1 col-start-2 justify-self-end mr-2 flex flex-row lg:flex-col items-center lg:items-stretch gap-3 lg:gap-3 w-auto lg:w-full lg:mt-auto lg:pt-4 lg:border-t lg:border-neutral-100 lg:dark:border-neutral-800",
-  functionBox: "flex items-center justify-between lg:w-full lg:px-2",
-  functionTitle: "hidden lg:block text-[11px] font-bold text-neutral-400 dark:text-neutral-500 tracking-wider",
+  functionGroup: "flex flex-col items-stretch gap-3 w-full pt-4 mt-4 border-t border-neutral-100 dark:border-neutral-800 lg:mt-auto",
+  functionBox: "flex items-center justify-between w-full px-2",
+  functionTitle: "block text-[11px] font-bold text-neutral-400 dark:text-neutral-500 tracking-wider",
   logoWrap: "flex items-center gap-3",
   navIcon: "w-6 h-6",
   themeIcon: "inline-block"
@@ -131,12 +133,14 @@ export const STYLES = {
   mainCard: APP_LAYOUT.pageSurface,
 
   // Navigation
+  navTopBlur: NAVIGATION_LAYOUT.topBlurLayer,
   nav: NAVIGATION_LAYOUT.sidebar,
   navHeader: NAVIGATION_LAYOUT.header,
   logoBtn: NAVIGATION_LAYOUT.brandButton,
   profileName: NAVIGATION_LAYOUT.brandText,
   menuButton: NAVIGATION_LAYOUT.menuButton,
   menuList: NAVIGATION_LAYOUT.menuList,
+  menuNavList: NAVIGATION_LAYOUT.menuNavList,
   menuItem: NAVIGATION_LAYOUT.menuItem,
   menuActive: NAVIGATION_LAYOUT.menuItemActive,
   openActive: NAVIGATION_LAYOUT.menuOpen,
