@@ -12,7 +12,7 @@ const APP_LAYOUT = {
 };
 
 const NAVIGATION_LAYOUT = {
-  sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white/75 dark:bg-neutral-900/75 backdrop-blur-md lg:bg-white lg:dark:bg-neutral-900 lg:backdrop-blur-none transition-colors duration-300 fixed inset-x-4 top-1 lg:sticky lg:inset-auto lg:top-8 lg:w-full z-[100] grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6`,
+  sidebar: `border border-neutral-200 dark:border-neutral-800 rounded-3xl shadow-sm dark:shadow-none bg-white dark:bg-neutral-900 transition-colors duration-300 fixed inset-x-4 top-1 lg:sticky lg:inset-auto lg:top-8 lg:w-full z-[100] grid grid-cols-[auto_1fr_auto] items-center lg:flex lg:flex-col lg:items-stretch lg:justify-start px-4 py-3 lg:p-4 xl:p-6 lg:h-[calc(100vh-4rem)] lg:gap-6`,
   header: "contents lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-full lg:min-w-0 lg:gap-2",
   brandButton: "w-8 h-8 rounded-full bg-indigo-600 text-white font-black text-sm flex items-center justify-center shadow-md shadow-indigo-500/20 shrink-0",
   brandText: "font-bold tracking-tight text-neutral-800 dark:text-neutral-100 shrink-0 text-sm sm:text-base truncate",
