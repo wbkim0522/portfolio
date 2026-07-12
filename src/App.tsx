@@ -19,6 +19,7 @@ export default function App() {
   const text = LANGUAGE[lang];
 
   useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
     document.body.classList.toggle('dark', theme === 'dark');
   }, [theme]);
 
