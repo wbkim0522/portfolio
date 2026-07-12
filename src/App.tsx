@@ -20,7 +20,6 @@ export default function App() {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
-    document.body.classList.toggle('dark', theme === 'dark');
   }, [theme]);
 
   return (
